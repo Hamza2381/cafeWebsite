@@ -29,7 +29,7 @@ const OrderForm = () => {
   
   const menuItems = {
     coffee: [
-      { id: 'c1', name: 'Espresso', price: 2.95, image: 'https://images.unsplash.com/photo-1510707577719-ae7eeae9283d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+      { id: 'c1', name: 'Espresso', price: 2.95, image: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg' },
       { id: 'c2', name: 'Cappuccino', price: 4.50, image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
       { id: 'c3', name: 'Latte', price: 4.75, image: 'https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
       { id: 'c4', name: 'Cold Brew', price: 4.25, image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
@@ -38,27 +38,27 @@ const OrderForm = () => {
     ],
     tea: [
       { id: 't1', name: 'Earl Grey', price: 3.50, image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 't2', name: 'Green Tea', price: 3.25, image: 'https://images.unsplash.com/photo-1556682851-c4580c583e23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 't3', name: 'Chai Latte', price: 4.75, image: 'https://images.unsplash.com/photo-1589888116214-9e9323951c95?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 't4', name: 'Herbal Infusion', price: 3.75, image: 'https://images.unsplash.com/photo-1563911892507-2240a37e9445?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+      { id: 't2', name: 'Green Tea', price: 3.25, image: 'https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg' },
+      { id: 't3', name: 'Chai Latte', price: 4.75, image: 'https://i.pinimg.com/originals/0d/b2/a1/0db2a10eb892c083b2bd51bd1d605e76.jpg' },
+      { id: 't4', name: 'Herbal Infusion', price: 3.75, image: 'https://images.pexels.com/photos/227908/pexels-photo-227908.jpeg' },
     ],
     breakfast: [
-      { id: 'b1', name: 'Avocado Toast', price: 8.95, image: 'https://images.unsplash.com/photo-1603046891744-76f2624a6e2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 'b2', name: 'Breakfast Burrito', price: 9.75, image: 'https://images.unsplash.com/photo-1584178638332-7069f6ebb93f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 'b3', name: 'Granola Bowl', price: 7.50, image: 'https://images.unsplash.com/photo-1565885685429-a8a9bac28ba3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+      { id: 'b1', name: 'Avocado Toast', price: 8.95, image: 'https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg' },
+      { id: 'b2', name: 'Breakfast Burrito', price: 9.75, image: 'https://images.pexels.com/photos/5737247/pexels-photo-5737247.jpeg' },
+      { id: 'b3', name: 'Granola Bowl', price: 7.50, image: 'https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg' },
       { id: 'b4', name: 'Breakfast Sandwich', price: 8.25, image: 'https://images.unsplash.com/photo-1600628421055-4d30de868b8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
     ],
     lunch: [
-      { id: 'l1', name: 'Grilled Cheese', price: 8.50, image: 'https://images.unsplash.com/photo-1582479429421-321922cae76d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 'l2', name: 'Caprese Sandwich', price: 9.25, image: 'https://images.unsplash.com/photo-1565599837634-889288bf8aac?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+      { id: 'l1', name: 'Grilled Cheese', price: 8.50, image: 'https://images.pexels.com/photos/30910196/pexels-photo-30910196/free-photo-of-delicious-grilled-cheese-sandwich-on-rustic-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+      { id: 'l2', name: 'Caprese Sandwich', price: 9.25, image: 'https://images.pexels.com/photos/30700809/pexels-photo-30700809/free-photo-of-delicious-caprese-sandwich-with-mozzarella.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
       { id: 'l3', name: 'Quinoa Bowl', price: 10.95, image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
       { id: 'l4', name: 'Turkey Club', price: 11.25, image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
     ],
     pastries: [
       { id: 'p1', name: 'Croissant', price: 3.50, image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 'p2', name: 'Blueberry Muffin', price: 3.95, image: 'https://images.unsplash.com/photo-1619985632461-f8d773145fbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 'p3', name: 'Cinnamon Roll', price: 4.50, image: 'https://images.unsplash.com/photo-1583529726967-0560f6a96cf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
-      { id: 'p4', name: 'Cookie', price: 2.95, image: 'https://images.unsplash.com/photo-1590080875243-39a13e82f0f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+      { id: 'p2', name: 'Blueberry Muffin', price: 3.95, image: 'https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg' },
+      { id: 'p3', name: 'Cinnamon Roll', price: 4.50, image: 'https://images.pexels.com/photos/267308/pexels-photo-267308.jpeg' },
+      { id: 'p4', name: 'Cookie', price: 2.95, image: 'https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg' },
     ],
   }
   
